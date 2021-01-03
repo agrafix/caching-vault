@@ -4,11 +4,12 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f72b6f5a11223efaae4abce679f565ef3c4a2ccce07ece516a7d4ca30d89ad58
+-- hash: d045485a8c1101cb9c1d54251cc48c42e544e597c1ec7c06b0e0a5850a78ddc8
 
 name:           caching-vault
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/agrafix/caching-vault#readme>
+synopsis:       A vault-style cache implementation
+description:    Allows a central cache for arbitrary values with expiry dates
 category:       Data
 homepage:       https://github.com/agrafix/caching-vault#readme
 bug-reports:    https://github.com/agrafix/caching-vault/issues

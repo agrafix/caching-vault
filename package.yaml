@@ -9,14 +9,10 @@ copyright:           "2021 Alexander Thiemann"
 extra-source-files:
   - README.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
+synopsis:            A vault-style cache implementation
 category:            Data
 
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/agrafix/caching-vault#readme>
+description:         Allows a central cache for arbitrary values with expiry dates
 
 dependencies:
   - base >= 4.7 && < 5

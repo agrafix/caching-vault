@@ -1,0 +1,62 @@
+name:                caching-vault
+version:             0.1.0.0
+github:              "agrafix/caching-vault"
+license:             BSD3
+author:              "Alexander Thiemann"
+maintainer:          "Alexander Thiemann <mail@thiemann.at>"
+copyright:           "2021 Alexander Thiemann"
+
+extra-source-files:
+  - README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+category:            Data
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/agrafix/caching-vault#readme>
+
+dependencies:
+  - base >= 4.7 && < 5
+  - time
+  - stm
+  - stm-containers
+  - text
+
+ghc-options:
+  - -Wall
+  - -fwarn-tabs
+  - -fwarn-incomplete-uni-patterns
+  - -fwarn-incomplete-record-updates
+
+default-extensions:
+  - OverloadedStrings
+  - DataKinds
+  - TypeOperators
+  - TypeFamilies
+  - GADTs
+  - FlexibleInstances
+  - FlexibleContexts
+  - MultiParamTypeClasses
+  - StrictData
+  - ScopedTypeVariables
+  - DeriveGeneric
+  - DeriveFunctor
+
+library:
+  source-dirs: src
+
+tests:
+  caching-vault-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+    dependencies:
+      - caching-vault
+      - hspec
+      - timespan

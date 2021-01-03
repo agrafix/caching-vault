@@ -1,0 +1,8 @@
+cradle:
+  stack:
+    stackYaml: "stack.yaml"
+    components:
+      - path: "./src"
+        component: "caching-vault:lib"
+      - path: "./test"
+        component: "caching-vault:test:caching-vault-test"
